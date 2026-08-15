@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Rivera - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Outfit:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: #1e293b; background: #f8fafc; padding: 2rem 1rem; line-height: 1.5; }
+        .resume-page { max-width: 800px; margin: 0 auto; background: #ffffff; padding: 3rem; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .header { border-bottom: 2px solid #e2e8f0; padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+        .name { font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 700; color: #0f172a; }
+        .title { font-size: 1.1rem; color: #0284c7; font-weight: 600; margin-top: 0.25rem; }
+        .contacts { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.75rem; font-size: 0.875rem; color: #475569; }
+        .section { margin-bottom: 1.5rem; }
+        .section-title { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1.5px solid #cbd5e1; padding-bottom: 0.25rem; margin-bottom: 0.75rem; }
+        .item { margin-bottom: 1rem; }
+        .item-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .item-title { font-weight: 700; font-size: 1rem; color: #0f172a; }
+        .item-sub { color: #0284c7; font-weight: 600; font-size: 0.9rem; }
+        .item-date { font-size: 0.85rem; color: #64748b; font-weight: 500; }
+        ul { padding-left: 1.25rem; margin-top: 0.35rem; font-size: 0.875rem; color: #334155; }
+        li { margin-bottom: 0.25rem; }
+        .skills-line { font-size: 0.875rem; margin-bottom: 0.4rem; color: #334155; }
+        .skills-line strong { color: #0f172a; }
+        .print-btn { display: inline-block; background: #0284c7; color: #fff; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: 600; margin-bottom: 1.5rem; cursor: pointer; border: none; }
+        @media print {
+            body { background: #fff; padding: 0; }
+            .resume-page { box-shadow: none; padding: 0; }
+            .print-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+    </div>
+    <div class="resume-page">
+        <header class="header">
+            <h1 class="name">Alex Rivera</h1>
+            <div class="title">B.Tech Computer Science & Engineering | Aspiring Software Engineer</div>
+            <div class="contacts">
+                <span>📧 alex.rivera.dev@gmail.com</span>
+                <span>📱 +91 98765 43210</span>
+                <span>📍 Bengaluru, India</span>
+                <span>🔗 github.com/alexrivera-dev</span>
+                <span>🔗 linkedin.com/in/alexrivera-dev</span>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">National Institute of Technology (NIT), Karnataka</span>
+                    <span class="item-date">2023 – 2027</span>
+                </div>
+                <div class="item-sub">B.Tech in Computer Science & Engineering | CGPA: 9.24 / 10.0</div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Delhi Public School (DPS), R.K. Puram</span>
+                    <span class="item-date">2021 – 2023</span>
+                </div>
+                <div class="item-sub">Higher Secondary Certificate (12th CBSE - Science) | Percentage: 95.6%</div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">St. Xavier's High School</span>
+                    <span class="item-date">2020 – 2021</span>
+                </div>
+                <div class="item-sub">Secondary School Certificate (10th CBSE) | Percentage: 96.2%</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-line"><strong>Languages:</strong> Java, Python, C++, JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3</div>
+            <div class="skills-line"><strong>Frameworks & Web:</strong> React.js, Next.js, Node.js, Express.js, Tailwind CSS, REST APIs</div>
+            <div class="skills-line"><strong>Cloud & DevOps:</strong> Amazon Web Services (AWS), Docker, CI/CD (GitHub Actions), Linux</div>
+            <div class="skills-line"><strong>Databases & Tools:</strong> PostgreSQL, MongoDB, MySQL, Redis, Git, Postman, Figma</div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">CloudScale Technologies — Software Engineering Intern</span>
+                    <span class="item-date">May 2025 – Jul 2025</span>
+                </div>
+                <div class="item-sub">Bengaluru, India (Hybrid)</div>
+                <ul>
+                    <li>Developed RESTful microservices with Node.js and PostgreSQL, handling 50k+ daily API requests.</li>
+                    <li>Automated CI/CD pipelines on AWS ECS using GitHub Actions, reducing deployment time by 35%.</li>
+                    <li>Integrated Redis caching layer, reducing heavy database query latency from 420ms to 95ms.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">TechNova Solutions — Frontend Developer Intern</span>
+                    <span class="item-date">Dec 2024 – Feb 2025</span>
+                </div>
+                <div class="item-sub">Remote</div>
+                <ul>
+                    <li>Engineered responsive web interfaces using React.js, TypeScript, and Tailwind CSS.</li>
+                    <li>Optimized frontend bundle size and component lifecycle, boosting Lighthouse score from 74 to 98.</li>
+                    <li>Collaborated in agile 2-week sprints, performing code reviews and automated Jest testing.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">NexusPlatform – Cloud Infrastructure Metrics Dashboard</span>
+                    <span class="item-date">React, Node.js, AWS, Socket.io</span>
+                </div>
+                <ul>
+                    <li>Engineered real-time telemetry dashboard monitoring Kubernetes pod health and API request spikes.</li>
+                    <li>Integrated WebSocket streaming for sub-second system resource visualization.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">NeuraCode – AI-Powered Code Reviewer & Assistant</span>
+                    <span class="item-date">Next.js, FastAPI, OpenAI API, Monaco Editor</span>
+                </div>
+                <ul>
+                    <li>Built AI code review tool providing automated vulnerability scanning and interactive diff viewer.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
